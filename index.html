@@ -69,9 +69,8 @@ button:hover {
         if (message === "") return;
         displayMessage("You", message);
         userInput.value = "";
-        // Call backend API (update the URL later)
         try {
-            const response = await fetch("URL", {
+            const response = await fetch("https://www.pella.app/server/eee468c3a5524af995669e3e210a322e", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message })
