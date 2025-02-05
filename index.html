@@ -70,7 +70,7 @@ button:hover {
         displayMessage("You", message);
         userInput.value = "";
         try {
-            const response = await fetch("https://www.pella.app/server/eee468c3a5524af995669e3e210a322e", {
+            const response = await fetch("https://www.pella.app/server/eee468c3a5524af995669e3e210a322e/api/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message })
